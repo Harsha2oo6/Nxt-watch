@@ -1,0 +1,1 @@
+export const  ProfileImage="https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png ";

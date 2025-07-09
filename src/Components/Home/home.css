@@ -1,0 +1,109 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+.banner {
+  width: 100%;
+  height: 250px;
+  background-image: url("https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png");
+  background-size: cover;
+  padding: 10px 20px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.home {
+  
+  position: relative;
+  width: 100%;
+  /* border: 2px solid black; */
+  height: 100%;
+  overflow-y: auto;
+}
+.image {
+  width: 180px;
+  height: 40px;
+}
+.buytag {
+  font-size: 23px;
+  line-height: 38px;
+  color: #20272b;
+}
+.getit {
+  border: 2px solid #253235;
+  color: #253235;
+  background-color: transparent;
+  padding: 10px;
+}
+.getit:hover {
+  color: white;
+  background-color: #253235;
+}
+.bannertop {
+  display: flex;
+  justify-content: space-between;
+}
+.removebanner {
+  background-color: lightgray;
+  margin-right: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 0;
+}
+.homeVideos {
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100vh;
+  padding: 25px;
+}
+.inputField {
+  display: flex;
+  width: 40%;
+  height: 60px;
+  border-radius: 5px;
+}
+.inputBar {
+  width: 85%;
+  padding: 16px;
+}
+.searchButton {
+  width: 15%;
+  border: 2px solid #d3d3d3;
+  height: 34px;
+}
+.videosField {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  
+}
+
+.noVideosView {
+  margin-top: 20px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.videosContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.noVideosimg{
+  width:300px;
+}

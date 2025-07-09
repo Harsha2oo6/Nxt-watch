@@ -1,0 +1,31 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.link {
+  padding-left: 30px;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.darklink{
+  color: white;
+}
+.active-link {
+  width: 100%;
+  background-color: #e7e8e8;
+}
+.darkActive-link{
+  background-color: #383838;
+  color: white;
+}
+.internal {
+  display: flex;
+  align-items: center;
+  width: auto;
+  justify-content: space-between;
+}
