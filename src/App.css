@@ -2,9 +2,17 @@
   margin: 0;
   padding: 0;
 }
+.laptop{
+    height: 100vh;
+}
 .main {
   display: flex;
   width: 100%;
   height: 100vh;
 }
-
+.child {
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 0;
+}
