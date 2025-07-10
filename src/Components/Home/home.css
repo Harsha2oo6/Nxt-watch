@@ -70,7 +70,9 @@
 }
 .searchBar {
   width: 35%;
+  height: 30px;
   padding: 16px;
+  border: 2px solid #d3d3d3;
 }
 .darksearchBar {
   background-color: #161712;
@@ -88,10 +90,12 @@
   color: white;
 }
 .searchButton:hover {
-  background-color: lightgrey;
+  background-color: rgb(190, 189, 189);
   color: black;
 }
-
+.searchicon{
+  font-size: 200%;
+}
 .videosField {
   width: 100%;
   flex: 1;

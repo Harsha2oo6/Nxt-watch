@@ -135,7 +135,7 @@ const Home = () => {
             }
             type="submit"
           >
-            <IoIosSearch />
+            <IoIosSearch className="searchicon"/>
           </button>
         </form>
         <div className="videosField">
