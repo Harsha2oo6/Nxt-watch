@@ -1,13 +1,18 @@
 import "./homeViewVideo.css";
 import { ThemeContext } from "../../HOCs/ThemeContext/themeContext";
 import { useContext } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 const HomeViewVideo = (props) => {
+  const navigate=useNavigate()
   const {isDark}=useContext(ThemeContext)
   const { id, channel, published_at, thumbnail_url, title, view_count } =
     props.details;
   const { profile_image_url, name } = channel;
+  const handleCardClick=()=>{
+    navigate(`/videos/${id}`)
+  }
   return (
-    <div className="videoElement">
+    <div className="videoElement" onClick={handleCardClick}>
       <img src={thumbnail_url} className="thumbnail" alt="thumbnail" />
       <div className="videoDetails">
         <img src={profile_image_url} className="profileImg" alt="profile" />

@@ -1,7 +1,4 @@
-*{
-    margin:0;
-    padding:0;
-}
+/* Universal selector removed: use only in global styles */
 .videoElement{
     width:300px;
     height: 280px;

@@ -9,6 +9,7 @@ import ThemeProvider from "./HOCs/ThemeContext/themeContext";
 import SavedVideos from "./Components/SavedVideos/savedVideos";
 import Trending from "./Components/Trending/trending";
 import Gaming from "./Components/Gaming/gaming";
+import DetailedVideoCard from "./Components/DetailedVideoCard/detailedVideoCard";
 
 function Layout({ children }) {
   const location = useLocation();
@@ -59,6 +60,14 @@ function App() {
               element={
                 <ProtectedRoute>
                   <SavedVideos />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/videos/:id"
+              element={
+                <ProtectedRoute>
+                  <DetailedVideoCard/>
                 </ProtectedRoute>
               }
             />

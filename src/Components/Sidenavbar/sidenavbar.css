@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    outline: 0;
-    box-sizing: border-box;
-}
+/* Universal selector removed: use only in global styles */
 .sidenav {
   width: 240px;           
   height: 100vh;

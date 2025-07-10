@@ -1,0 +1,74 @@
+.trendingElement{
+    display: flex;
+    flex-direction: row;
+}
+.trendthumbnail{
+    width:40%;
+    margin-right: 20px;
+}
+.trendingDetails{
+    padding:20px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.profileImg{
+    display: none;
+}
+.trendingTexts{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.trendingName{
+color: gray;
+}
+.trendingViews{
+    display: flex;
+    justify-content: row;
+    justify-content: space-between;
+    width:250px;
+}
+.darkTrendingTitle{
+    color: rgb(233, 232, 232);
+}
+@media screen and (max-width:576px){
+    .trendingElement{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .trendthumbnail{
+        width: 100%;
+    }
+    .trendingTexts{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        gap:5px;
+        width: 100%;
+
+    }
+    .views{
+        width: 100%;
+    }
+    .profileImg{
+        display: inline;
+    height:40px;
+    width:40px;
+    border-radius: 50%; 
+    margin-right: 10px;
+    }
+    .trendingTitle{
+        font-size: 15px;
+        /* color: red; */
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px){
+     .trendingTitle{
+        font-size: 15px;
+        
+    }
+}

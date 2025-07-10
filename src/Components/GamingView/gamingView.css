@@ -1,0 +1,26 @@
+.gamingElement{
+    width: 200px;
+}
+.gamingThumbnail{
+    width:200px;
+}
+.gamingTexts{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.gamingName{
+    color:#627388;
+}
+.darkTitle{
+    color:#ebe8e7;
+}
+@media screen and (max-width:576px){
+    .gamingElement{
+        width:150px;
+    }
+    .gamingThumbnail{
+        width: 150px;
+    }
+}

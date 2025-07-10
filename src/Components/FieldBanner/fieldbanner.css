@@ -1,0 +1,40 @@
+.fieldCard{
+    width: 100%;
+    background-color: #f1f1f1;
+    height:120px;
+    padding:25px 25px 25px 50px;
+}
+.darkFieldCard{
+    background-color: #181818;
+}
+.fieldBanner{
+    width: 22%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.fieldIcon{
+    margin-right:10px;
+    padding:20px;
+    height: 80px;
+    width:80px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    background-color: #e1e9f0;
+}
+.darkFieldIcon{
+    background-color: #0f0f0f;
+    
+}
+.fieldName{
+    color: #1c293a;
+}
+.darkFieldName{
+    color:white;
+}
