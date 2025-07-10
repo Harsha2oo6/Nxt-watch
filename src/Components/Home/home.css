@@ -99,7 +99,6 @@
   justify-content: center;
   align-items: center;
   min-height: 300px;
-  
 }
 
 .noVideosView {
@@ -139,7 +138,7 @@
     height: 22vh;
     background-size: cover;
   }
-  .image{
+  .image {
     height: 30px;
     width: 200px;
   }
@@ -158,11 +157,11 @@
     height: 30px;
     padding: 5px;
   }
-  .searchBar{
-    width:70%;
+  .searchBar {
+    width: 70%;
   }
-  .searchButton{
-    width:25%
+  .searchButton {
+    width: 25%;
   }
 }
 @media screen and (min-width: 577px) and( max-width:768px) {
@@ -181,10 +180,10 @@
     height: 30px;
     padding: 5px;
   }
-  .videosContainer{
+  .videosContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap:10px;
+    gap: 10px;
   }
 }

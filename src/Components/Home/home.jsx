@@ -127,7 +127,7 @@ const Home = () => {
             value={inputValue}
             placeholder="Search"
             onChange={(e) => setInputValue(e.target.value)}
-            className={isDark ? "darksearchBar searchBar" : "searchinputBar"}
+            className={isDark ? "darksearchBar searchBar" : "searchBar"}
           />
           <button
             className={
