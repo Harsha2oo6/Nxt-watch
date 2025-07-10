@@ -68,11 +68,11 @@
   height: 60px;
   border-radius: 5px;
 }
-.inputBar {
+.searchBar {
   width: 35%;
   padding: 16px;
 }
-.darkinputBar {
+.darksearchBar {
   background-color: #161712;
   color: white;
 }
@@ -158,7 +158,7 @@
     height: 30px;
     padding: 5px;
   }
-  .inputBar{
+  .searchBar{
     width:70%;
   }
   .searchButton{
