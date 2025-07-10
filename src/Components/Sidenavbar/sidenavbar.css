@@ -4,17 +4,14 @@
     box-sizing: border-box;
 }
 .sidenav {
-  width: 240px;           /* fixed width for sidebar */
+  width: 240px;           
   height: 100vh;
-  position: sticky;       /* <-- this keeps it in place */
-  top: 0;
-  left: 0;
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  background: #fff;       /* or your preferred background */
+  background: #fff;     
   z-index: 10;
 }
 .darkSidenav{
@@ -57,4 +54,10 @@ nav{
 }
 .twitter{
     background-color: #3eabf2;
+}
+@media  screen and (max-width:768px){
+    .sidenav{
+        display: none;
+        background-color: black;
+    }
 }

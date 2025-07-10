@@ -26,7 +26,7 @@ const Home = () => {
 
     const fetchVideos = async () => {
       try {
-        // throw new Error("test failure")
+        throw new Error("test failure")
         const fetchedData = await fetch(
           `https://apis.ccbp.in/videos/all?search=${searchQuery}`,
           options

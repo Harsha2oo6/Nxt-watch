@@ -2,6 +2,8 @@ import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { CiLight } from "react-icons/ci";
 import { MdDarkMode } from "react-icons/md";
+import { LuLogOut } from "react-icons/lu";
+import { AiOutlineMenu } from "react-icons/ai";
 import Popup from "reactjs-popup";
 
 import { DarkThemeLogo, LightThemeLogo } from "../../Constants/Images/logos.js";
@@ -38,24 +40,30 @@ const Header = () => {
             )}
           </button>
           <img src={ProfileImage} className="profile" alt="profile" />
+          <AiOutlineMenu className={isDark?"darkMenu menu":"menu"}/>
           <Popup
             modal
             trigger={
-              <button
-                type="button"
-                className={isDark ? "darkLogout logout" : "logout"}
-              >
-                Logout
-              </button>
+              <div>
+                <button className="logoutbutton" ><LuLogOut className={isDark?"darklogouticon logouticon":"logouticon"} /></button>
+                <button
+                  type="button"
+                  className={isDark ? "darkLogout logout" : "logout"}
+                >
+                  Logout
+                </button>
+              </div>
             }
           >
             {(close) => (
               <div className={isDark ? "darkModal modal" : "modal"}>
                 <div className="content">Are you sure, you want to logout?</div>
                 <div>
-                  <button className="close popupBut" onClick={close}>Close</button>
+                  <button className="close popupBut" onClick={close}>
+                    Close
+                  </button>
                   <button
-                  className="confirm popupBut"
+                    className="confirm popupBut"
                     onClick={() => {
                       LogoutService();
                       navigate("/login", { replace: true });
