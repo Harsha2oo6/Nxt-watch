@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 import RenderFailure from "../FailureView/failureView";
 import { GamingApiUrl } from "../../Constants/Apis/apis";
 import GamingView from "../GamingView/gamingView";
-import FieldBanner from "../FieldBanner/FieldBanner";
+import FieldBanner from "../FieldBanner/fieldBanner.jsx";
 import { Gamingicon } from "../../Common/Icons/icons";
 import { BeatLoader } from "react-spinners";
 import { ThemeContext } from "../../HOCs/ThemeContext/themeContext";

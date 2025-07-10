@@ -8,7 +8,7 @@ import { TrendingApiUrl } from "../../Constants/Apis/apis";
 import { Flameicon } from "../../Common/Icons/icons";
 import { ThemeContext } from "../../HOCs/ThemeContext/themeContext";
 
-import FieldBanner from "../FieldBanner/FieldBanner";
+import FieldBanner from "../FieldBanner/fieldBanner.jsx";
 import TrendingVideoView from "../TrendingVideoView/trendingVideoView";
 
 import "./trending.css";
