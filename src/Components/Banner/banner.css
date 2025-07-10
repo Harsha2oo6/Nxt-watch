@@ -1,0 +1,108 @@
+
+.banner {
+  width: 100%;
+  height: 250px;
+  background-image: url("https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png");
+  background-size: cover;
+  padding: 10px 20px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.image {
+  width: 180px;
+  height: 40px;
+}
+
+.buytag {
+  font-size: 23px;
+  line-height: 38px;
+  color: #20272b;
+  height: 70%;
+}
+
+.getit {
+  border: 2px solid #253235;
+  color: #253235;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.getit:hover {
+  color: white;
+  background-color: #253235;
+}
+
+.bannertop {
+  display: flex;
+  justify-content: space-between;
+  height: 30%;
+}
+
+.removebanner {
+  background-color: lightgray;
+  position: relative;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 0;
+  transition: 1s all ease-out;
+}
+
+.removebanner:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 576px) {
+  .banner {
+    height: 22vh;
+    background-size: cover;
+  }
+
+  .image {
+    height: 30px;
+    width: 200px;
+  }
+
+  .buytag {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    width: 60%;
+    height: 60%;
+    color: #20272b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .getit {
+    height: 30px;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .banner {
+    height: 40vh;
+    background-size: cover;
+  }
+
+  .buytag {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    width: 60%;
+    color: #20272b;
+  }
+
+  .getit {
+    height: 30px;
+    padding: 5px;
+  }}

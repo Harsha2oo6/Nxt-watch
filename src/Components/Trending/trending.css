@@ -1,41 +1,46 @@
-/* Universal selector removed: use only in global styles */
-.box{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.trendingContainer{
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-    padding: 50px;
-}
-.darktrend{
-    background-color: #0f0f0f;
-}
-.trendingPage{
-    background-color: #f9f9f9;
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-.darkTrendingPage{
-    background-color: #0f0f0f;
+.box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.loader{display: flex;
+.trendingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+}
+
+.darktrend {
+  background-color: #0f0f0f;
+}
+
+.trendingPage {
+  background-color: #f9f9f9;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.darkTrendingPage {
+  background-color: #0f0f0f;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .trendingElement {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height: 100%;
-    }
-@media screen and (max-width:576px){
-    .trendingElement{
-        display: flex;
-        flex-direction: column;
-    }
+  }
 }

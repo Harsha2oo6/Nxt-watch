@@ -1,70 +1,81 @@
-/* Universal selector removed: use only in global styles */
-.videoElement{
-    width:300px;
-    height: 280px;
-    margin: 0px 20px 20px 0px ;
-    /* margin: 0px 0px 0px 0px ;  nadeem */
+.videoElement {
+  width: 300px;
+  height: 280px;
+  margin: 0px 20px 20px 0px;
 }
-.thumbnail{
-    width: 300px;
+
+.thumbnail {
+  width: 300px;
 }
-.videoDetails{
-    display: flex;
+
+.videoDetails {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.profileImg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.videoTexts {
+  margin-left: 5px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.videoTitle {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.darkvideoTitle {
+  color: rgb(235, 228, 228);
+}
+
+.views {
+  display: flex;
+}
+
+.videoName {
+  color: gray;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .videoElement {
     width: 100%;
-    height: 100px;
-    justify-content: space-between;
-}
-.profileImg{
-    height:40px;
-    width:40px;
-    border-radius: 50%; 
-}
-.videoTexts{
-    margin-left: 5px;
-    font-size: 13px;
+    height: 30%;
+  }
+
+  .thumbnail {
+    width: 100%;
+  }
+
+  .videoDetails {
+    height: auto;
+  }
+
+  .videoTexts {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 20px;
+  }
 }
-.videoTitle{
-    font-size: 15px;
-    font-weight: 400;
-}
-.darkvideoTitle{
-    color: rgb(235, 228, 228);
-}
-.views{
-    display: flex;
-    
-}
-.videoName{
-    color: gray;
-    margin-right: 20px;
-}
-@media screen and (max-width:576px){
-    .videoElement{
-        width: 100%;
-        height: 30%;
-    }
-    .thumbnail{
-        width: 100%;
-    }
-    .videoDetails{
-        height: auto;
-    }
-    .videoTexts{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        line-height: 20px;
-    }
-}
-@media screen and (min-width:577px) and (max-width:768px) {
-    .videoElement{
-        width: 47%;
-        height: 30%;
-    }
-    .thumbnail{
-        width: 100%;
-    }
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .videoElement {
+    width: 47%;
+    height: 30%;
+  }
+
+  .thumbnail {
+    width: 100%;
+  }
 }

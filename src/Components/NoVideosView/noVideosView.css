@@ -1,0 +1,13 @@
+.noVideosView {
+  padding-top: 20px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.darknoVideosView {
+  color: grey;
+}

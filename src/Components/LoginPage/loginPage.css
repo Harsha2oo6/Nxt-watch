@@ -1,68 +1,90 @@
-.display{
-    width: 100vw;
-    height:100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.darkdisplay{
-    background-color: grey;
-}
-.loginCard{
-    width:300px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius:5px;
-    padding:20px;
-    box-shadow: 0 0 5px 0 grey;
-}
-.darkcard{
-    background-color: black;
+.display {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
 }
 
+.darkdisplay {
+  background-color: grey;
+}
 
-.login-logo{
-    width: 200px;
-    height: 50px;
+.loginCard {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 5px 0 grey;
 }
-.labelContainer{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    color: gray
+
+.darkcard {
+  background-color: black;
 }
-.show{
-    margin-top: 10px;
-    font-size: 15px;
-    color: black;
-    font-weight: 550;
+
+.login-logo {
+  width: 200px;
+  height: 50px;
 }
-.darkShow{
-    color:white
+
+.labelContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  color: gray;
 }
-.inputBar{
-    height: 33px;
-    width: 100%;
-    border:2px solid lightgrey;
-    border-radius: 5px;
+
+.show {
+  margin-top: 10px;
+  font-size: 15px;
+  color: black;
+  font-weight: 550;
 }
-.loginButton{
-    width:80%;
-    height: 35px;
-    background-color: rgb(68, 119, 238);
-    color: white;
-    font-weight: 550;
-    border:0;
-    border-radius: 10px;
+
+.darkShow {
+  color: white;
 }
-.loginButton:hover{
-    background-color: rgb(52, 108, 239);
+
+.inputBar {
+  height: 33px;
+  width: 100%;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
 }
-.errorMessage{
-    color: red;
-    font-size: 10px;
+
+.loginButton {
+  width: 80%;
+  height: 35px;
+  background-color: rgb(68, 119, 238);
+  color: white;
+  font-weight: 550;
+  border: 0;
+  border-radius: 10px;
+}
+
+.loginButton:hover {
+  background-color: rgb(52, 108, 239);
+}
+
+.errorMessage {
+  color: red;
+  font-size: 10px;
+}
+
+.loginMode{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  border: 2px solid darkgray;
+  border-radius: 50%;
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

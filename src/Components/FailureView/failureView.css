@@ -1,0 +1,21 @@
+.retry {
+  padding: 8px;
+  width: 80px;
+  color: white;
+  background-color: #2082f2;
+  border: 0;
+  border-radius: 5px;
+}
+.noVideosView {
+  padding-top: 20px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.darknoVideosView {
+  color: grey;
+}

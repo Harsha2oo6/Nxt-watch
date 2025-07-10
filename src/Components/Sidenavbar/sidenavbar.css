@@ -1,59 +1,66 @@
-/* Universal selector removed: use only in global styles */
 .sidenav {
-  width: 240px;           
+  width: 240px;
   height: 100vh;
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  background: #fff;     
+  background: #fff;
   z-index: 10;
 }
-.darkSidenav{
-   background-color: #1f201b;
-    
+
+.darkSidenav {
+  background-color: #1f201b;
 }
-nav{
-    margin-top: 30px;
+
+nav {
+  margin-top: 30px;
 }
-.foot{
-    height:170px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0px 0px 20px 20px;
-    color: #3c5975;
+
+.foot {
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 0px 20px 20px;
+  color: #3c5975;
 }
-.darkFoot{
-    color: white;
+
+.darkFoot {
+  color: white;
 }
-.apps{
-    display: flex;
-    width: 70%;
-    justify-content: space-between;
+
+.apps {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
 }
+
 .fa {
   border-radius: 25px;
   padding: 6px;
   width: 40px;
-  height:40px;
-  font-size: 20px; 
-    color: white;
+  height: 40px;
+  font-size: 20px;
+  color: white;
 }
 
 .linkedin {
-  background-color: #0076b0;  
+  background-color: #0076b0;
 }
-.facebook{
- background-color: #335a99;  
+
+.facebook {
+  background-color: #335a99;
 }
-.twitter{
-    background-color: #3eabf2;
+
+.twitter {
+  background-color: #3eabf2;
 }
-@media  screen and (max-width:768px){
-    .sidenav{
-        display: none;
-        background-color: black;
-    }
+
+@media screen and (max-width: 768px) {
+  .sidenav {
+    display: none;
+    background-color: black;
+  }
 }
