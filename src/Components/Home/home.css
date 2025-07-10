@@ -1,8 +1,6 @@
 *{
   margin:0;
   padding: 0;
-  box-sizing: border-box;
-  /* overflow: hidden; */
 }
 .banner {
   width: 100%;
@@ -14,9 +12,6 @@
   flex-direction: column;
   justify-content: space-around;
 }
-/* .home {
-  /* width: 100%; */
-/* } */ 
 .image {
   width: 180px;
   height: 40px;
@@ -42,20 +37,27 @@
 }
 .removebanner {
   background-color: lightgray;
-  margin-right: 140px;
+  margin-right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   border: 0;
+  transition: 1s all ease-out;
+}
+.removebanner:hover{
+  transform: scale(1.2);
 }
 .homeVideos {
   background-color: #f9f9f9;
   width: 100%;
   padding: 25px;
+}
+.darkhomeVideos{
+  background-color: #161712;
 }
 .inputField {
   display: flex;
@@ -67,11 +69,25 @@
   width: 85%;
   padding: 16px;
 }
+.darkinputBar{
+  background-color: #161712;
+  color:white
+}
 .searchButton {
   width: 15%;
   border: 2px solid #d3d3d3;
   height: 34px;
+  transition: 500ms;
 }
+.darksearchButton{
+  background-color: #161712;
+  color: white;
+}
+.searchButton:hover{
+  background-color: lightgrey;
+  color: black;
+}
+
 .videosField {
   width: 100%;
   flex: 1;
@@ -84,20 +100,33 @@
 
 .noVideosView {
   margin-top: 20px;
-  height: 370px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   text-align: center;
 }
-
+.darknoVideosView{
+  color: grey;
+}
 .videosContainer{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+.darkLoader{
+  color: white;
+}
 
 .noVideosimg{
   width:300px;
+}
+.retry{
+  padding:8px;
+  width:80px;
+  color: white;
+  background-color: #2082f2;
+  border: 0;
+  border-radius: 5px;
 }

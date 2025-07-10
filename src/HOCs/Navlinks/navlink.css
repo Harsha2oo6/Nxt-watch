@@ -23,6 +23,11 @@
   background-color: #383838;
   color: white;
 }
+.icon{
+  color: red;
+  margin-right:12px ;
+  font-size: 22px;
+}
 .internal {
   display: flex;
   align-items: center;

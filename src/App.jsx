@@ -14,16 +14,13 @@ function Layout({ children }) {
   const location = useLocation();
   const isLogin = location.pathname !== "/login";
   return (
-    <div className="laptop">
+    <>
       {isLogin && <Header />}
       <div className="main">
         {isLogin && <SideNavbar />}
-        <div className="child">
-          {children}
-        </div>
-        
+        <div className="child">{children}</div>
       </div>
-    </div>
+    </>
   );
 }
 

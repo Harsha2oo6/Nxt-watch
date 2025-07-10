@@ -29,6 +29,9 @@
     font-size: 15px;
     font-weight: 400;
 }
+.darkvideoTitle{
+    color: rgb(235, 228, 228);
+}
 .views{
     display: flex;
     
