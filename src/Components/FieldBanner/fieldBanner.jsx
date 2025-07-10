@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import "./fieldBanner.css";
+import "./FieldBanner.css";
 import { ThemeContext } from "../../HOCs/ThemeContext/themeContext";
 
 const FieldBanner = (props) => {
