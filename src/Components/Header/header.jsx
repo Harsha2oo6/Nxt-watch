@@ -44,7 +44,7 @@ const Header = () => {
             <div className={isDark ? "darkDropdown dropdown" : "dropdown"}>
               <p onClick={() => navigate("/")}>Home</p>
               <p onClick={() => navigate("/trending")}>Trending</p>
-              <p onClick={() => navigate("/saved")}>Saved Videos</p>
+              <p onClick={() => navigate("/savedvideos")}>Saved Videos</p>
             </div>
           </Popup>
 

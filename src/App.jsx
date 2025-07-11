@@ -6,6 +6,7 @@ import SideNavbar from "./Components/Sidenavbar/sidenavbar";
 import ProtectedRoute from "./HOCs/ProtectedRoute/protectedRoute";
 import LoginPage from "./Components/LoginPage/loginPage";
 import ThemeProvider from "./HOCs/ThemeContext/themeContext";
+import SavedVideosProvider from "./HOCs/SavedContext/savedContext";
 import SavedVideos from "./Components/SavedVideos/savedVideos";
 import Trending from "./Components/Trending/trending";
 import Gaming from "./Components/Gaming/gaming";
@@ -19,7 +20,9 @@ function Layout({ children }) {
       {isLogin && <Header />}
       <div className="main">
         {isLogin && <SideNavbar />}
-        <div className="child">{children}</div>
+        <div className="child">
+          {children}
+          </div>
       </div>
     </>
   );
@@ -28,6 +31,7 @@ function Layout({ children }) {
 function App() {
   return (
     <ThemeProvider>
+      <SavedVideosProvider>
       <BrowserRouter>
         <Layout>
           <Routes>
@@ -59,7 +63,7 @@ function App() {
               path="/savedvideos"
               element={
                 <ProtectedRoute>
-                  <SavedVideos />
+                    <SavedVideos />
                 </ProtectedRoute>
               }
             />
@@ -67,7 +71,8 @@ function App() {
               path="/videos/:id"
               element={
                 <ProtectedRoute>
-                  <DetailedVideoCard/>
+                  
+                    <DetailedVideoCard />
                 </ProtectedRoute>
               }
             />
@@ -75,6 +80,7 @@ function App() {
           </Routes>
         </Layout>
       </BrowserRouter>
+      </SavedVideosProvider>
     </ThemeProvider>
   );
 }

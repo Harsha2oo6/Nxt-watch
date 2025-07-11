@@ -1,11 +1,13 @@
 .trendingElement {
   display: flex;
   flex-direction: row;
+  width:100%
 }
 
 .trendthumbnail {
   width: 40%;
   margin-right: 20px;
+  /* border:2px solid blue */
 }
 
 .trendingDetails {
@@ -16,15 +18,13 @@
   height: 150px;
 }
 
-.profileImg {
-  display: none;
-}
-
 .trendingTexts {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 70px;
+  width:100%;
+  /* border:2px solid red */
 }
 
 .trendingName {
@@ -62,13 +62,14 @@
     width: 100%;
   }
 
-  .profileImg {
+  /* .hello {
     display: inline;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
+    border:2px solid red;
     border-radius: 50%;
     margin-right: 10px;
-  }
+  } */
 
   .trendingTitle {
     font-size: 15px;

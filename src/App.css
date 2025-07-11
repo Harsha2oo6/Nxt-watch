@@ -10,9 +10,9 @@
 }
 .child {
   flex: 1;
-  height: 100vh;
+  height: 100%;
   overflow-y: auto;
-}
+} 
 .child::-webkit-scrollbar {
   width: 8px;
 }

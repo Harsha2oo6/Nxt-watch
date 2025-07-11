@@ -1,0 +1,16 @@
+.darkSavedPage {
+  background-color: #0f0f0f;
+  height: 100%;
+}
+.savedPage{
+  height: 100%;
+}
+.savedContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+}
+.darkSavedContainer {
+  background-color: #0f0f0f;
+}

@@ -53,7 +53,7 @@ const Home = () => {
   };
 
   const renderVideosList = () => (
-    <ul className="videosContainer">
+    <ul className={isDark?"darkVideosContainer videosContainer":"videosContainer"}>
       {videosArray.map((video) => (
         <HomeViewVideo key={video.id} details={video} />
       ))}
@@ -62,7 +62,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      {ismounted ? <RenderBanner onCancel={()=>setIsMounted(false)}/> : null}
+      {/* {ismounted ? <RenderBanner onCancel={()=>setIsMounted(false)}/> : null} */}
       <div className={isDark ? "darkhomeVideos homeVideos" : "homeVideos"}>
         <form className="inputField" onSubmit={handleSubmit}>
           <input
@@ -81,7 +81,6 @@ const Home = () => {
             <IoIosSearch className="searchicon" />
           </button>
         </form>
-
         <div className="videosField">
           {isLoading === true ? (
             <BeatLoader color={isDark ? "white" : "black"} />

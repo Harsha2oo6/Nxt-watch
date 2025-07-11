@@ -63,7 +63,7 @@ const Gaming = () => {
           <RenderFailure onRetry={fetchData} />
         </div>
       ) : isLoading ? (
-        <div className="gameLoader">
+        <div className="loader">
           <BeatLoader color={isDark ? "white" : "black"} />
         </div>
       ) : (

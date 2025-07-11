@@ -11,6 +11,8 @@ const ThemeProvider = ({ children }) => {
     setDark(newTheme === "dark");
     localStorage.setItem("theme", newTheme);
   };
+  
+  
 
   return (
     <ThemeContext.Provider value={{toggleTheme, isDark }}>

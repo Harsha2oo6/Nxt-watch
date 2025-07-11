@@ -16,7 +16,7 @@ const TrendingVideoView = ({ details }) => {
     <div className="trendingElement" onClick={() => navigate(`/videos/${id}`)}>
       <img src={thumbnail_url} className="trendthumbnail" alt="thumbnail" />
       <div className="trendingDetails">
-        <img src={profile_image_url} className="profileImg" alt="profile" />
+        {/* <img src={profile_image_url} className="hello" alt="profile" /> */}
         <div className="trendingTexts">
           <h2
             className={

@@ -1,0 +1,83 @@
+.videoDescription {
+  padding: 25px;
+}
+.darkVideoDescription {
+  color: rgb(234, 232, 232);
+}
+.descriptionTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80px;
+  /* border:2px solid red */
+}
+.descriptionDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+}
+.descriptionDate {
+  display: flex;
+  width: 230px;
+  justify-content: space-between;
+  align-items: center;
+  color: #6e7e92;
+  /* border:2px solid blue */
+}
+.darkDescriptionDate {
+  color: rgb(168, 167, 167);
+}
+.descriptionBottom {
+  display: flex;
+  height: 130px;
+  padding-top: 10px;
+  gap: 20px;
+}
+.profileDes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.channelProfile {
+  height: 60px;
+  width: 60px;
+}
+.subscribers {
+  color: #6e7e92;
+}
+.darkSubscribers {
+  color: rgb(153, 152, 152);
+}
+.channelDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 5px;
+  height: 50px;
+}
+
+.likeStatusBut {
+  background-color: transparent;
+  border:0
+}
+.darkLikeSatusBut{
+    color: white;
+}
+.liked {
+  color: rgb(100, 100, 242);
+
+}
+.likeDiv{
+    width: auto;
+    height: 40px;
+    font-size:16px;
+    font-weight:550;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+@media screen and (max-width:576px){
+  
+}
