@@ -3,7 +3,7 @@
 }
 
 .gamingThumbnail {
-  width: 200px;
+  width: 100%;
 }
 
 .gamingTexts {
@@ -23,10 +23,13 @@
 
 @media screen and (max-width: 576px) {
   .gamingElement {
-    width: 150px;
-  }
-
-  .gamingThumbnail {
-    width: 150px;
+    width: 46%;
   }
 }
+
+@media screen and (min-width: 576px) and (max-width:768px) {
+  .gamingElement {
+    width: 30%;
+  }
+}
+

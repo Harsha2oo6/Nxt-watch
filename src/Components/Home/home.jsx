@@ -62,7 +62,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      {/* {ismounted ? <RenderBanner onCancel={()=>setIsMounted(false)}/> : null} */}
+      {ismounted ? <RenderBanner onCancel={()=>setIsMounted(false)}/> : null}
       <div className={isDark ? "darkhomeVideos homeVideos" : "homeVideos"}>
         <form className="inputField" onSubmit={handleSubmit}>
           <input

@@ -7,8 +7,9 @@
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
-  gap: 15px;
+  gap: 20px;
   justify-content: flex-start;
+  width:100%;
 }
 
 .darkGameContainers {

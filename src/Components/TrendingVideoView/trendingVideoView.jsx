@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { ThemeContext } from "../../HOCs/ThemeContext/themeContext";
+import { DurationFinder } from "../../Services/durationConverter";
 
 import "./trendingVideoView.css";
 
@@ -28,7 +29,7 @@ const TrendingVideoView = ({ details }) => {
           <p className="trendingName">{name}</p>
           <div className="trendingViews">
             <p className="trendingName">{view_count} Views</p>
-            <p className="trendingName">*{published_at}</p>
+            <p className="trendingName"><ul className="dot"><li>{DurationFinder(published_at)}</li></ul></p>
           </div>
         </div>
       </div>

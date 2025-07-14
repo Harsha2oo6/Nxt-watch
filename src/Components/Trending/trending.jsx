@@ -63,7 +63,7 @@ const Trending = () => {
           <BeatLoader color={isDark ? "white" : "black"} />
         </div>
       ) : (
-        <div >
+        <div className="banneredContainer">
           <FieldBanner name="Trending" icon={Flameicon} />
           {renderVideos()}
         </div>

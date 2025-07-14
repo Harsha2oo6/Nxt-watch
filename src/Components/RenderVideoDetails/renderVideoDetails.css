@@ -9,7 +9,6 @@
   flex-direction: column;
   justify-content: center;
   height: 80px;
-  /* border:2px solid red */
 }
 .descriptionDetails {
   display: flex;
@@ -23,7 +22,6 @@
   justify-content: space-between;
   align-items: center;
   color: #6e7e92;
-  /* border:2px solid blue */
 }
 .darkDescriptionDate {
   color: rgb(168, 167, 167);
@@ -76,8 +74,36 @@
     display: flex;
     margin-right: 10px;
     align-items: center;
-    /* border: 2px solid red; */
 }
 @media screen and (max-width:576px){
-  
+  .descriptionTop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100px;
+
+  }
+  .descriptionDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height:auto;
+  }
+  .descriptionDate{
+    width: 200px;
+    font-size: 15px;
+    
+  }
+  .likeDiv{
+    font-size: 14px;
+  }
+  .profileDes{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+  }
+  .channelDescription{
+    height: 55px;
+  }
 }

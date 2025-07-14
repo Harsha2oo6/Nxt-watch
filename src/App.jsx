@@ -11,6 +11,7 @@ import SavedVideos from "./Components/SavedVideos/savedVideos";
 import Trending from "./Components/Trending/trending";
 import Gaming from "./Components/Gaming/gaming";
 import DetailedVideoCard from "./Components/DetailedVideoCard/detailedVideoCard";
+import PageNotFound from "./Components/PageNotFound/pageNotFound";
 
 function Layout({ children }) {
   const location = useLocation();
@@ -77,6 +78,15 @@ function App() {
               }
             />
             <Route path="/login" element={<LoginPage />} />
+            <Route
+              path="*"
+              element={
+                <ProtectedRoute>
+                  
+                    <PageNotFound />
+                </ProtectedRoute>
+              }
+            />
           </Routes>
         </Layout>
       </BrowserRouter>

@@ -1,0 +1,23 @@
+.pagenotfound{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+}
+.darkpagenotfound{
+    background-color: #181818;
+}
+.noPageImg{
+    width: 400px;
+}
+.noPageTexts{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    /* border:2px solid red */
+}
